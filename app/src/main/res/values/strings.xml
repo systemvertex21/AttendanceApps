@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Attendance Apps</string>
+    <string name="register">Register</string>
+    <string name="birthday">Date of Birth</string>
+    <string-array name="role">
+        <item>Supervisor</item>
+        <item>Admin</item>
+    </string-array>
+</resources>

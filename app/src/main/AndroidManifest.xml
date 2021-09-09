@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.attendanceapps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendanceApps">
+        <activity android:name=".ViewAttendanceStaffActivity2"
+            android:parentActivityName=".ViewAttendanceStaffActivity"  />
+        <activity android:name=".ChooseDateActivity"
+            android:parentActivityName=".ViewAttendanceStaffActivity" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".EditStaffAttendActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ViewAttendActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AddAttendActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".EditSupervisorActivity"
+            android:parentActivityName=".ViewSupervisorActivity" />
+        <activity
+            android:name=".EditStaffActivity"
+            android:parentActivityName=".ViewStaffActivity" />
+        <activity
+            android:name=".ViewSupervisorActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".AddSupervisorActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".ViewAttendanceStaffActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".ViewStaffActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".AddStaffActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity
+            android:name=".RegAdminActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

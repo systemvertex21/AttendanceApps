@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCFAF"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="Attendance Apps"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Select Date: "
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/DateTextView"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="    Date"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_calendar"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/addAttend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:text="Add Attendance"
+            android:background="@drawable/cancel_button"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/DateTextView2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="    Date"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_calendar"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/viewAttend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="View Attendance"
+            android:background="@drawable/cancel_button"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonAttend"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginLayout">
+
+        <Button
+            android:id="@+id/forgetPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/loginbutt"
+            android:text="Change Password"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonAttend">
+        <Button
+            android:id="@+id/logOut1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="@android:color/white"
+            android:background="@drawable/loginbutt"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
